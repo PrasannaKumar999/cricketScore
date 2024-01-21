@@ -1,7 +1,7 @@
 // const { MongoClient } = require('mongodb');
 import { MongoClient } from "mongodb";
-
-const uri = 'mongodb://0.0.0.0:27017';
+// mongodb+srv://prasannakumar:Apple%40123@cluster0.drrzouu.mongodb.net/
+const uri = 'mongodb+srv://prasannakumar:Apple%40123@cluster0.drrzouu.mongodb.net/';
 const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
 
 let conn;
