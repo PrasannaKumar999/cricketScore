@@ -9,7 +9,11 @@ import http from 'http';
 const PORT = 5050;
 const app = express();
 
-app.use(cors());
+app.use(cors({
+    origin:'https://cricket-score-frontend.vercel.app',
+    methods:['GET','POST'],
+    credentials:true
+}));
 app.use(express.json());
 
 // Load the /posts routes
