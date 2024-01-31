@@ -5,7 +5,9 @@ import { MongoClient } from "mongodb";
 
 const connectToDb = async () => {
 
-    const uri = 'mongodb://0.0.0.0:27017';
+    // const uri = 'mongodb://0.0.0.0:27017';
+const uri = 'mongodb+srv://prasannakumar:Apple%40123@cluster0.drrzouu.mongodb.net/';
+
     const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
 
     let conn;
@@ -23,6 +25,7 @@ const connectToDb = async () => {
 const router = express.Router();
 
 router.get("/", async (req, res) => {
+    console.log('checkinggg');
     try {
         let collection = await db.collection("match");
         let results = await collection.find({})
