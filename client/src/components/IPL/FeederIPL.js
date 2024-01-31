@@ -194,7 +194,7 @@ export default function FeederIPL() {
 
 
     // let baseUrl = "http://localhost:5050";
-    let baseUrl = "cricket-score-oxzpvnpz2-prasanna-kumars-projects-d91fe750.vercel.app";
+    let baseUrl = "https://cricket-score-api-nine.vercel.app";
     const runs = [0, 1, 2, 3, 4, 6];
     const wicket = ['Bowled', 'Caught', 'Lbw', 'Runout', 'Stumped', 'Hitwicket'];
     const extras = ['wide', 'no-ball', 'free-hit', 'lb+1', 'lb+2', 'lb+3', 'lb+4',];
