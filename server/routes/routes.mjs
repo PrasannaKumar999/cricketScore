@@ -25,15 +25,16 @@ const uri = 'mongodb+srv://prasannakumar:Apple%40123@cluster0.drrzouu.mongodb.ne
 const router = express.Router();
 
 router.get("/", async (req, res) => {
-    console.log('checkinggg');
-    try {
-        let collection = await db.collection("match");
-        let results = await collection.find({})
-            .toArray();
-        res.send(results).status(200);
-    } catch (e) {
-        res.send(e).status(200);
-    }
+    res.json('hello')
+    // console.log('checkinggg');
+    // try {
+    //     let collection = await db.collection("match");
+    //     let results = await collection.find({})
+    //         .toArray();
+    //     res.send(results).status(200);
+    // } catch (e) {
+    //     res.send(e).status(200);
+    // }
 });
 
 router.get("/getData", async (req, res) => {
